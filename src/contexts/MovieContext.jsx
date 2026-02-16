@@ -21,7 +21,7 @@ export const MovieProvider = ({children}) => {
         setFavorites(prev => [...prev, movie]) //this is how to update state and add values to an array
     }
 
-    const removeFromFavorites = (movie) => {
+    const removeFromFavorites = (movieId) => {
         setFavorites(prev => prev.filter(movie => movie.id !== movieId))
     }
 
